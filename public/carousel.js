@@ -2,7 +2,7 @@ var index = 0;
 
 function display(i) {
     clearInterval(interval);
-    interval = setInterval(display_next, 5000);
+    interval = setInterval(display_next, 8000);
     var containers = document.getElementsByClassName("carousel_container");
     var dots = document.getElementsByClassName("carousel_dot");
 
@@ -22,4 +22,4 @@ function display_next() {
     display(index+1);
 }
 
-var interval = setInterval(display_next, 5000);
+var interval = setInterval(display_next, 8000);
