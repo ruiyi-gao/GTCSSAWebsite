@@ -9,3 +9,59 @@
 .navbar2-sub-text {
   color: black;
 }
+
+#carousel {
+  width: 100%;
+}
+
+.carousel_img {
+  max-width: 99%;
+  max-width: 99%;
+}
+
+.carousel_dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.carousel_dot:hover {
+  background-color: #717171;
+}
+
+.active {
+  background-color: #333333;
+}
+
+.dot_container {
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+}
+
+.carousel_container {
+  display: none;
+  width: 100%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
