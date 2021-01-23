@@ -49,6 +49,44 @@
   width: 100%;
 }
 
+.contact {
+  height: 100px;
+  background-color: rgb(201, 199, 199);
+  text-align: center;
+}
+
+.contact_left {
+  display: inline-block;
+  height: 50px;
+  width: 25%;
+  border-style: none double none none;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact_center {
+  display: inline-block;
+  height: 50px;
+  width: 25%;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact_right {
+  display: inline-block;
+  height: 50px;
+  width: 25%;
+  border-style: none none none double;
+  padding: 5px;
+  text-align: center;
+}
+
+.icon_img {
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
+}
+
 .fade-in {
   animation: fadeIn ease 1.5s;
   -webkit-animation: fadeIn ease 1.5s;
