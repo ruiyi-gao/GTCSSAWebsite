@@ -1,0 +1,66 @@
+div.depart_container {
+    margin: 60px 7.5% 24px 7.5%;
+}
+
+h2.depart_header {
+    color: #3a485e;
+    margin-bottom: 35px;
+}
+
+div.profile {
+    display:flex;
+    height: 100px;
+    margin-bottom: 33px;
+}
+
+img.profile_pic {
+    float: left;
+    height: 100px;
+    width: 75px;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+div.info_container {
+    float: left;
+    height:100px;
+    width: 120px;
+    border-right: 1px solid #222222;
+    padding-right: 20px;
+}
+
+div.info_field {
+    height: 25px;
+    width: 100px;
+}
+
+p.name {
+    font-size: 14px;
+}
+
+p.other_info {
+    font-size: 14px;
+    color: #878787;
+}
+
+div.intro_container {
+    flex-grow: 100;
+    margin-left: 20px;
+    height: 100px;
+    max-width: 80%;
+    float: left;
+}
+
+div.intro {
+    height: 75px;
+    font-size: 14px;
+}
+
+div.linkedin {
+    height:25px;
+    font-size: 14px;
+}
+
+p.intro {
+    font-size: 14px;
+}
