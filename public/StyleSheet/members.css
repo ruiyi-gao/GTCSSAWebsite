@@ -9,7 +9,6 @@ h2.depart_header {
 
 div.profile {
     display:flex;
-    height: 100px;
     margin-bottom: 33px;
 }
 
@@ -24,14 +23,14 @@ img.profile_pic {
 div.info_container {
     float: left;
     height:100px;
-    width: 120px;
+    width: 140px;
     border-right: 1px solid #222222;
     padding-right: 20px;
 }
 
 div.info_field {
     height: 25px;
-    width: 100px;
+    width: 120px;
 }
 
 p.name {
@@ -52,8 +51,22 @@ div.intro_container {
 }
 
 div.intro {
+    overflow: hidden;
     height: 75px;
     font-size: 14px;
+}
+
+div.intro_container_small_screen {
+    position: relative;
+    margin-top: 120px;
+    margin-left: -230px;
+    width: 100%;
+    font-size: 14px;
+}
+
+div.intro_small_screen {
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 div.linkedin {
