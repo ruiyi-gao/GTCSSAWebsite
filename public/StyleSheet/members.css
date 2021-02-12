@@ -2,6 +2,10 @@ div.depart_container {
     margin: 60px 7.5% 24px 7.5%;
 }
 
+div.depart_container_small_screen {
+    margin: 30px 7.5% 12px 7.5%;
+}
+
 h2.depart_header {
     color: #3a485e;
     margin-bottom: 35px;
@@ -56,19 +60,6 @@ div.intro {
     font-size: 14px;
 }
 
-div.intro_container_small_screen {
-    position: relative;
-    margin-top: 120px;
-    margin-left: -230px;
-    width: 100%;
-    font-size: 14px;
-}
-
-div.intro_small_screen {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
 div.linkedin {
     height:25px;
     font-size: 14px;
@@ -76,4 +67,23 @@ div.linkedin {
 
 p.intro {
     font-size: 14px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    div.intro_container {
+        position: relative;
+        margin-top: 120px;
+        margin-left: -230px;
+        width: 100%;
+        font-size: 14px;
+        height:auto;
+    }
+    
+    div.intro {
+        height: auto;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
 }

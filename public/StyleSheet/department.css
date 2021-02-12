@@ -3,26 +3,60 @@ div.depart_container {
     margin: 60px 7.5% 24px 7.5%;
 }
 
-div.depart_header {
-    margin-bottom: 28px;
+h1.depart_title {
     color: #3a485e;
-    padding-bottom: 18px;
-    width: 600px;
-    border-bottom: 1px solid #222222;
 }
 
-div.depart_intro {
+div.depart_intro_container {
+    position: relative;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 800px;
+}
+
+div.depart_intro_container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    border-top: 1px solid #222222;
+}
+
+p.depart_intro {
     font-size: 16px;
-    width: 700px;
-}
-
-img.profile_pic {
-    width: 150px;
-    height: 200px;
-    margin-bottom: 15px;
-    border-radius: 10%;
 }
 
 div.member_row {
-    width: 240px;
+    overflow:hidden;
+}
+
+div.img_container {
+    height: 275px;
+    width: 150px;
+    float: left;
+    font-size: 16px;
+}
+
+img.profile_pic {
+    border-radius: 10%;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+p.member_name {
+    margin-bottom: 10px;
+}
+
+p.member_role {
+    color: #878787;
+}
+
+div.space {
+    float:left;
+    background-color: skyblue;
+    height:100px;
+    width: 100px;
 }
