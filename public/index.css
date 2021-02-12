@@ -1,0 +1,240 @@
+#navbar {
+  background-color: #414B5A;
+}
+
+.navbar2-text {
+  color: white;
+}
+
+.navbar2-sub-text {
+  color: black;
+}
+
+#carousel {
+  width: 100%;
+}
+
+.carousel_img {
+  max-width: 99%;
+  max-width: 99%;
+}
+
+.carousel_dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.carousel_dot:hover {
+  background-color: #717171;
+}
+
+.active {
+  background-color: #333333;
+}
+
+.dot_container {
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+}
+
+.carousel_container {
+  display: none;
+  width: 100%;
+}
+
+.contact {
+  height: 100px;
+  background-color: rgb(201, 199, 199);
+  text-align: center;
+}
+
+.contact_left {
+  display: inline-block;
+  height: 50px;
+  width: 25%;
+  border-style: none double none none;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact_center {
+  display: inline-block;
+  height: 50px;
+  width: 25%;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact_right {
+  display: inline-block;
+  height: 50px;
+  width: 25%;
+  border-style: none none none double;
+  padding: 5px;
+  text-align: center;
+}
+
+.icon_img {
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.borderBott {
+  border-bottom-style:solid;
+  border-color:rgb(180, 180, 180);
+  border-width:1px
+}
+
+.borderBottShort {
+  border-bottom-style:solid;
+  border-color:rgb(224, 217, 217);
+  border-width:1px
+}
+
+
+.borderOther {
+  border-top-style:solid;
+  border-left-style:solid;
+  border-right-style:solid;
+  border-color:rgb(180, 180, 180);
+  border-width:1px
+}
+
+.borderBottShort::before{
+  content: '';
+	position: absolute;
+	left: 26%;
+	bottom: 1%;
+	right: auto;
+	height: 1.5px;
+	width: 50%;
+	background-color:gray
+}
+
+.borderOther2 {
+  border-bottom-style:solid;
+  border-color:rgb(224, 217, 217);
+  border-width:1px
+}
+
+.borderOther2::before{
+  content: '';
+	position: absolute;
+	left: 26%;
+	bottom: 82%;
+	right: auto;
+	height: 1.5px;
+	width: 50%;
+	background-color:gray;
+}
+
+.depBox {
+  height:20%;
+  padding:15px
+
+
+}
+
+.depBox2{
+  height:600px;
+  padding:15px
+}
+/* Default: extra large devices */
+/* Large devices */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+      width: 1280px;
+  }
+}
+.fa.showCenter{
+  color:gray;
+  margin:25% 30%
+}
+
+.h1show{
+  color:gray;
+  text-align:center; line-height: 250%; font-size: 64px
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Small devices */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 575.98px) {
+  
+}
