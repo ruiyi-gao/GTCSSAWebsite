@@ -7,6 +7,11 @@ h1.depart_title {
     color: #3a485e;
 }
 
+h1.executive_title {
+    color: #3a485e;
+    margin-bottom: 25px;
+}
+
 div.depart_intro_container {
     position: relative;
     margin-top: 15px;
