@@ -51,41 +51,48 @@
 
 .contact {
   margin-top: 100px;
-  height: 100px;
+  height: 120px;
   background-color: rgb(201, 199, 199);
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.contact_left {
-  display: inline-block;
-  height: 50px;
-  width: 25%;
-  border-style: none double none none;
-  padding: 5px;
-  text-align: center;
+#contact_container{
+  height: 85px;
 }
 
-.contact_center {
-  display: inline-block;
-  height: 50px;
-  width: 25%;
-  padding: 5px;
-  text-align: center;
+div.contact_icon_container{
+  height: 85px;
+  width: 33%;
+  float: left;
 }
 
-.contact_right {
-  display: inline-block;
+#contact_left {
   height: 50px;
-  width: 25%;
-  border-style: none none none double;
-  padding: 5px;
+  border-right: 2px solid #222222;
+}
+
+#contact_mid {
+  height: 50px;
+}
+
+#contact_right {
+  height: 50px;
+  border-left: #222222 solid 2px;
+}
+
+.div_contact_info {
+  margin-top: 2.5px;
   text-align: center;
+  font-size: 14px;
 }
 
 .icon_img {
-  height: 35px;
-  width: 35px;
-  border-radius: 20%;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
 }
 
 .fade-in {
