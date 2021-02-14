@@ -4,7 +4,13 @@
   -moz-box-shadow: #666 0px 0px 10px;
   box-shadow: #666 0px 0px 10px;
 }
+.navbar-text{
+  color:rgb(254, 233, 180) !important
+}
 
+.navbar-brand{
+  padding: 0px 6px 10px 0; /*让导航栏文字跟下面网页标题对齐*/
+}
 .navbar2-text {
   color: white;
 }
@@ -248,4 +254,40 @@ div.contact_icon_container{
   box-shadow: #666 0px 0px 10px;
 }
 
+nav ul {
+  display: flex;
+justify-content : center; /*justify-content : center;元素在主轴（页面横轴）上居中排列*/
+}
+nav li {
+position: relative;
+  list-style: none;
+padding: 0px;
+transition-property: all;
+transition-duration: 0.2s;
+transition-timing-function:linear;
+}
+nav li::before {   /* 伪元素来做下划线 */ 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0; /* 一开始宽度为0下划线也为0看不出来 */ 
+  height: 100%;
+  border-bottom: 4px solid rgb(254, 233, 180);
+  transition: all 0.2s  linear;
+}
 
+nav li:hover::before {
+  width: 100%; /* hover后宽度显示出来下划线也显示出来 */ 
+  top: 0;
+  left: 0;
+  transition-delay: 0.1s;
+  border-bottom-color: rgb(254, 233, 180);
+}
+nav li:active {
+  background: rgb(254, 233, 180);
+  color: #fff;
+}
+nav li:hover ~ nav li:before { /*~ 选择器：查找指定元素后面的所有兄弟结点*/
+left: 0; /*处于hover后面元素的下划线从左侧开始显示*/
+}
