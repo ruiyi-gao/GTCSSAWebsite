@@ -1,5 +1,8 @@
 #navbar {
   background-color: #414B5A;
+  -webkit-box-shadow: #666 0px 0px 10px;
+  -moz-box-shadow: #666 0px 0px 10px;
+  box-shadow: #666 0px 0px 10px;
 }
 
 .navbar2-text {
@@ -240,4 +243,9 @@ div.contact_icon_container{
   line-height: 40px;
   color: white;
   background-color: rgb(128, 128, 128);
+  -webkit-box-shadow: #666 0px 0px 10px;
+  -moz-box-shadow: #666 0px 0px 10px;
+  box-shadow: #666 0px 0px 10px;
 }
+
+
