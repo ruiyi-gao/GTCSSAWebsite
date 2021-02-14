@@ -231,3 +231,13 @@ div.contact_icon_container{
   color:gray;
   text-align:center; line-height: 250%; font-size: 64px
 }
+
+.changeLangBtn{
+  width:120px;
+  height: 40px;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  background-color: rgb(128, 128, 128);
+}
