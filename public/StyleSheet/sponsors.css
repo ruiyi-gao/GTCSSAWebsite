@@ -1,0 +1,95 @@
+/* Our Supporters */
+<!--div.sponsor_title_container{
+    position: absolute;
+    width: 445px;
+    height: 45px;
+    left: 50%;
+    top: 405px;
+}
+-->
+
+h1.sponsor_title_text{
+    position: absolute;
+    width: 80%;
+    height: 45px;
+    left: 25%;
+    top: 45%;
+
+    font-family: Archivo;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color:#FFFAFA;
+
+}
+
+/* tech-tower-night 1 */
+div.img_container1{
+    position: absolute;
+    width: 100%;
+    height: 677px;
+    left: 0px;
+    top: 75px;
+    opacity: 0.75;
+}
+
+img.sponsors{
+    width: 100%;
+    height: 100%;
+}
+
+div.regtangle{
+    position: absolute;
+width: 47.8%;
+height: 41.8%;
+left: 30%;
+top: 283px;
+
+background: rgba(196, 196, 196, 0.7);
+}
+
+h1.sponsor_partner{
+    position: absolute;
+    width: 80%;
+    height: 45px;
+    left: 30%;
+    top: 60%;
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #F0B517;
+
+
+
+}
+
+<!--div.sponsor_partner_container{
+    position: absolute;
+    width: 445px;
+    height: 45px;
+    left: 50%;
+    top: 365px;
+}
+-->
+
+table.display{
+    position: absolute;
+    width:80%;
+    top: 800px;
+}
+
+img.profile_pic1 {
+    height: auto;
+    width: 100%;
+    margin-bottom: 70px;
+}
