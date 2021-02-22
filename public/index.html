@@ -16,47 +16,34 @@
     <a class="navbar-brand" href="/">
       <img src="assets/logo.png" width="50" height="50" alt="" loading="lazy">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navBarContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="navbar-text">ABOUT</span>
+            <span class="navbar-text">关于CSSA</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="about">
-            <a class="dropdown-item" href="#departments"><span class="navbar-sub-text">About CSSA</span></a>
-            <a class="dropdown-item" href="#clubs"><span class="navbar-sub-text">CSSA Clubs</span></a>
+            <a class="dropdown-item" href="#departments"><span class="navbar-sub-text">部门介绍</span></a>
+            <a class="dropdown-item" href="#clubs"><span class="navbar-sub-text">成员介绍</span></a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">facebook and instagram</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="first-year" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="navbar-text">FIRST-YEAR</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="first-year">
-            <a class="dropdown-item" href="#"><span class="navbar-sub-text">Placeholder</span></a>
-            <a class="dropdown-item" href="#"><span class="navbar-sub-text">Placeholder</span></a>
-          </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="/events"><span class="navbar-text">EVENTS</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact"><span class="navbar-text">CONTACT</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/sponsors"><span class="navbar-text">SPONSORS</span></a></li>
-      </ul>
-      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#"><span class="navbar-text">新生</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/events"><span class="navbar-text">赞助商</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/sponsors"><span class="navbar-text">联系我们</span></a></li>
         <li class="nav-item">
           <!-- 新生群button入口 -->
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wechatModal">
-            微信群验证
-          </button>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#wechatModal"><span class="navbar-text">官方专业群</span></a>
           <!-- Modal -->
           <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="margin-top: 90px;">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="wechatModalLabel">微信群验证</h5>
+                  <h5 class="modal-title" id="wechatModalLabel">专业群验证</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
