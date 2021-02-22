@@ -276,14 +276,14 @@ nav li::before {   /* 伪元素来做下划线 */
   border-bottom: 4px solid rgb(254, 233, 180);
   transition: all 0.2s  linear;
 }
-
-nav li:hover::before {
-  width: 100%; /* hover后宽度显示出来下划线也显示出来 */ 
+/* hover后宽度显示出来下划线也显示出来 */ 
+/* nav li:hover::before {
+  width: 100%;
   top: 0;
   left: 0;
   transition-delay: 0.1s;
   border-bottom-color: rgb(254, 233, 180);
-}
+} */
 nav li:active {
   background: rgb(254, 233, 180);
   color: #fff;
