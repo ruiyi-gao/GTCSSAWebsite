@@ -179,14 +179,14 @@ div.contact_icon_container{
 .borderLeft {
   border-top-style:solid;
   border-left-style:solid;
-
+  border-bottom-style:solid;
   border-color:rgb(180, 180, 180);
   border-width:1px
 }
 
 .borderRight {
   border-top-style:solid;
-
+  border-bottom-style:solid;
   border-right-style:solid;
   border-color:rgb(180, 180, 180);
   border-width:1px
@@ -248,8 +248,6 @@ div.contact_icon_container{
   height:100%;
   padding-left: 0 !important; 
   padding-right: 0 !important;
-  text-align: center;
-  font-size:1.9em
 }
 
 
@@ -260,13 +258,12 @@ div.contact_icon_container{
 }
 .fa.showCenter{
   color:gray;
-  margin: 28% 0;
-  line-height:100%
+  margin:25% 30%
 }
 
 .h1show{
   color:gray;
-  text-align:center; line-height: 250%; font-size: 4.2em
+  text-align:center; line-height: 250%; font-size: 64px
 }
 
 .changeLangBtn{
