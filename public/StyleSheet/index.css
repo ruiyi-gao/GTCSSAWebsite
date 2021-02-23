@@ -329,4 +329,4 @@ nav li:active {
 left: 0; 
 }
 /*处于hover后面元素的下划线从左侧开始显示*/
-/*nav li:hover .dropdown-menu {display: block;} */ /*navbar鼠标悬停自动弹出*/
+nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出

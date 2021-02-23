@@ -1,5 +1,5 @@
+node_modules
+src
 .DS_Store
 .idea
-dist
 data
-node_modules
