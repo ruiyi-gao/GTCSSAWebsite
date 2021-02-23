@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --build tsconfig.json",
-    "start": "NODE_ENV=debug CSSA_SERVER_PORT=19080 node dist/app.js",
-    "start:production": "NODE_ENV=production node dist/app.js"
+    "start": "NODE_ENV=debug CSSA_SERVER_PORT=19080 node --icu-data-dir=node_modules/full-icu dist/app.js",
+    "start:production": "NODE_ENV=production node --icu-data-dir=node_modules/full-icu dist/app.js"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
