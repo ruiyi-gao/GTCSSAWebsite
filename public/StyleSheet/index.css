@@ -176,6 +176,22 @@ div.contact_icon_container{
   border-width:1px
 }
 
+.borderLeft {
+  border-top-style:solid;
+  border-left-style:solid;
+
+  border-color:rgb(180, 180, 180);
+  border-width:1px
+}
+
+.borderRight {
+  border-top-style:solid;
+
+  border-right-style:solid;
+  border-color:rgb(180, 180, 180);
+  border-width:1px
+}
+
 
 .borderOther {
   border-top-style:solid;
@@ -214,15 +230,26 @@ div.contact_icon_container{
 }
 
 .depBox {
-  height:20%;
-  padding:15px
-
+  width: 100%;
+  padding-bottom: 100%;/* padding百分比相对父元素宽度计算 */
+  height: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 
 }
+.col-lg-2{
+  padding-left: 0 !important;padding-right: 0 !important;
+}
 
+.col-lg-8{
+  padding-left: 0 !important;padding-right: 0 !important;
+}
 .depBox2{
-  height:600px;
-  padding:15px
+  height:100%;
+  padding-left: 0 !important; 
+  padding-right: 0 !important;
+  text-align: center;
+  font-size:1.9em
 }
 
 
@@ -233,12 +260,13 @@ div.contact_icon_container{
 }
 .fa.showCenter{
   color:gray;
-  margin:25% 30%
+  margin: 28% 0;
+  line-height:100%
 }
 
 .h1show{
   color:gray;
-  text-align:center; line-height: 250%; font-size: 64px
+  text-align:center; line-height: 250%; font-size: 4.2em
 }
 
 .changeLangBtn{
@@ -304,4 +332,4 @@ nav li:active {
 left: 0; 
 }
 /*处于hover后面元素的下划线从左侧开始显示*/
-/*nav li:hover .dropdown-menu {display: block;} */ /*navbar鼠标悬停自动弹出*/
+nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
