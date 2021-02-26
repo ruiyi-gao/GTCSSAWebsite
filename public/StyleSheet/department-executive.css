@@ -1,83 +1,113 @@
 div.depart_container {
-    overflow: hidden;
-    margin: 60px 7.5% 24px 7.5%;
+  overflow: hidden;
+  margin: 60px 7.5% 24px 7.5%;
 }
 
 h1.depart_title {
-    color: #3a485e;
+  color: #3a485e;
 }
 
 h1.executive_title {
-    color: #3a485e;
-    margin-bottom: 25px;
+  color: #3a485e;
+  margin-bottom: 25px;
 }
 
 div.depart_intro_container {
-    position: relative;
-    margin-top: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 800px;
+  position: relative;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 800px;
 }
 
 div.depart_intro_container::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 80%;
-    border-top: 1px solid #222222;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  border-top: 1px solid #222222;
 }
 
 @media only screen and (max-width: 1000px) {
-    div.depart_intro_container {
-        width: 600px;
-    }
+  div.depart_intro_container {
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-    div.depart_intro_container {
-        width: 400px;
-    }
+  div.depart_intro_container {
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    div.depart_intro_container {
-        width: 100%;
-    }
+  div.depart_intro_container {
+    width: 100%;
+  }
 
-    div.img_container {
-        font-size: 12px;
-    }
+  div.img_container {
+    font-size: 12px;
+  }
 }
 
 p.depart_intro {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 div.img_container {
-    width: 14.2857%;
-    float: left;
-    font-size: 14px;
+  width: 14.2857%;
+  float: left;
+  font-size: 14px;
 }
 
 div.space_container {
-    width: 14.2857%;
-    float:left;
-    height: 1px;
+  width: 14.2857%;
+  float: left;
+  height: 1px;
 }
 
 img.profile_pic {
-    border-radius: 10%;
-    height: auto;
-    width: 100%;
-    margin-bottom: 10px;
+  border-radius: 10%;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 p.member_name {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 p.member_role {
-    color: #878787;
+  color: #878787;
+}
+
+div.depart_separate_line {
+  border-top: 1px solid #828282;
+  width: 30%;
+  margin: auto;
+}
+
+ul.depart_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3.5%;
+  text-align: center;
+  color: #878787;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Archivo";
+}
+
+li.depart_list_item {
+  margin-top: 1.5%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
