@@ -1,12 +1,11 @@
 /* Our Supporters */
-<!--div.sponsor_title_container{
+div.sponsor_title_container{
     position: absolute;
     width: 445px;
     height: 45px;
     left: 50%;
     top: 405px;
 }
--->
 
 h1.sponsor_title_text{
     position: absolute;
@@ -27,6 +26,51 @@ h1.sponsor_title_text{
 
 }
 
+.image-container {
+    background: url(../assets/tech-tower-night.jpg) no-repeat rgba(0, 0, 0, 0.3) center;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    background-color: rgba(77, 77, 77, 0.507);
+    width: 50%;
+    height: 50%;
+    font-family: Archivo;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-container .sponsor-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    color: #FFFAFA;
+}
+.text-container .sponsor-subtitle {
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #F0B517;
+}
+
+.sponsor-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* tech-tower-night 1 */
 div.img_container1{
     position: absolute;
@@ -42,7 +86,7 @@ img.sponsors{
     height: 100%;
 }
 
-div.regtangle{
+div.rectangle{
     position: absolute;
 width: 47.8%;
 height: 41.8%;
@@ -73,23 +117,35 @@ h1.sponsor_partner{
 
 }
 
-<!--div.sponsor_partner_container{
+div.sponsor_partner_container{
     position: absolute;
     width: 445px;
     height: 45px;
     left: 50%;
     top: 365px;
 }
--->
 
 table.display{
-    position: absolute;
     width:80%;
-    top: 800px;
+    margin-top: 50px;
 }
 
 img.profile_pic1 {
     height: auto;
     width: 100%;
     margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .image-container {
+        height: 40vh;
+    }
+    .text-container .sponsor-title {
+        font-size: 24px;
+    }
+    .text-container .sponsor-subtitle {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
 }
