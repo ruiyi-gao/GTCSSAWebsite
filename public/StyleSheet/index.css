@@ -231,8 +231,8 @@ div.contact_icon_container{
 
 .depBox {
   width: 100%;
-  padding-bottom: 100%;/* padding百分比相对父元素宽度计算 */
-  height: 0;
+  ;/* padding百分比相对父元素宽度计算 */
+  height:100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
 
@@ -246,12 +246,20 @@ div.contact_icon_container{
 }
 .depBox2{
   height:100%;
-  padding-left: 0 !important; 
-  padding-right: 0 !important;
+  padding-left: 4% !important; 
+  padding-right: 4% !important;
   text-align: center;
-  font-size:1.9em
+  font-size:24px
 }
-
+.center-vertical{
+  position: relative;
+  top:50%;
+  transform:translateY(-50%);
+}.center-horizontal{
+  position: relative;
+  left:50%;
+  transform:translateX(-50%); 
+}
 
 @media screen and (max-width: 1280px) {
   .container {
@@ -260,7 +268,7 @@ div.contact_icon_container{
 }
 .fa.showCenter{
   color:gray;
-  margin: 28% 0;
+  margin: 36% 0;
   line-height:100%
 }
 
