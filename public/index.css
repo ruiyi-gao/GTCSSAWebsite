@@ -12,11 +12,12 @@
 
 #carousel {
   width: 100%;
+  height: 90vh;
 }
 
 .carousel_img {
   max-width: 99%;
-  max-width: 99%;
+  max-height: 99%;
 }
 
 .carousel_dot {
@@ -46,7 +47,8 @@
 
 .carousel_container {
   display: none;
-  width: 100%;
+  height: 80%;
+  text-align: center;
 }
 
 .contact {
@@ -223,28 +225,42 @@
   .container {
       width: 1280px;
   }
-}
-.fa.showCenter{
-  color:gray;
-  margin:25% 30%
-}
 
-.h1show{
-  color:gray;
-  text-align:center; line-height: 250%; font-size: 64px
+  .fa.showCenter{
+    color:gray;
+    margin:25% 30%
+  }
+
+  .h1show{
+    color:gray;
+    text-align:center; line-height: 250%; font-size: 64px
+  }
+  #carousel {
+    width: 100%;
+    height: 80vh;
+  }
 }
 
 /* Medium devices */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  
+  #carousel {
+    width: 100%;
+    height: 70vh;
+  }
 }
 
 /* Small devices */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  
+  #carousel {
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 /* Extra small devices */
 @media only screen and (max-width: 575.98px) {
-  
+  #carousel {
+    width: 100%;
+    height: 40vh;
+  }
 }
