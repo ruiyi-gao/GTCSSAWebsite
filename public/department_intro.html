@@ -17,95 +17,97 @@
     />
     <link rel="stylesheet" href="./StyleSheet/index.css" />
     <link rel="stylesheet" href="./StyleSheet/department-executive.css" />
+    <script type="text/javascript" src="./JavaScript/emailVerification.js"></script>
     <script rel="text/javascript" src="JavaScript/responsive.js"></script>
     <title>GTCSSA</title>
   </head>
   <body onload="responsive_layout(true)" onresize="responsive_layout(false)">
     <!-- Navbar 导航栏 -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="./index">
-        <img src="assets/logo.png" width="50" height="50" alt="" loading="lazy">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navBarContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="navbar-text">关于CSSA</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="about">
-              <a class="dropdown-item" href="./department_intro"><span class="navbar-sub-text">部门介绍</span></a>
-              <a class="dropdown-item" href="./members"><span class="navbar-sub-text">成员介绍</span></a>
-              <div class="dropdown-divider"></div>
-              <span class="dropdown-item" data-toggle="modal" data-target="#instagramModal">
-                <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram
-              </span>
-              <span class="dropdown-item" data-toggle="modal" data-target="#wechatModal">
-                <i class="fa fa-weixin" aria-hidden="true"></i>&nbsp;&nbsp;微信
-              </span>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="./index">
+      <img src="assets/logo.png" width="50" height="50" alt="" loading="lazy">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navBarContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="navbar-text">关于CSSA</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="about">
+            <a class="dropdown-item" href="./department_intro"><span class="navbar-sub-text">部门介绍</span></a>
+            <a class="dropdown-item" href="./members"><span class="navbar-sub-text">成员介绍</span></a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-item" data-toggle="modal" data-target="#instagramModal">
+              <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram
+            </span>
+            <span class="dropdown-item" data-toggle="modal" data-target="#wechatModal">
+              <i class="fa fa-weixin" aria-hidden="true"></i>&nbsp;&nbsp;微信
+            </span>
+          </div>
+          <div class="modal fade" id="instagramModal" tabindex="-1" aria-labelledby="instagramModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="margin-top: 90px;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="instagramModalLabel">Instagram</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body"><img src="./assets/Instagram.png" width="100%" /></div>
+              </div>
             </div>
-            <div class="modal fade" id="instagramModal" tabindex="-1" aria-labelledby="instagramModalLabel" aria-hidden="true">
-              <div class="modal-dialog" style="margin-top: 90px;">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="instagramModalLabel">Instagram</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body"><img src="./assets/Instagram.png" width="100%" /></div>
+          </div>
+          <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="margin-top: 90px;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="wechatModalLabel">CSSA小助手微信</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body"><img src="./assets/Wechat.jpg" width="100%" /></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./sponsors"><span class="navbar-text">赞助商</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact_me"><span class="navbar-text">联系我们</span></a></li>
+        <li class="nav-item">
+          <!-- 新生群button入口 -->
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#groupModal"><span class="navbar-text">官方专业群</span></a>
+          <!-- Modal -->
+          <div class="modal fade" id="groupModal" tabindex="-1" aria-labelledby="groupModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="margin-top: 90px;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="groupModalLabel">专业群验证</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="alert" style="display: none;" role="alert" id="emailAlert"></div>
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="email" placeholder="请输入你的GT邮箱">
+                      <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail" data-size="invisible"></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button id="emailValidate" class="btn btn-primary" onclick="validateEmail()">提交</button>
                 </div>
               </div>
             </div>
-            <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLabel" aria-hidden="true">
-              <div class="modal-dialog" style="margin-top: 90px;">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="wechatModalLabel">CSSA小助手微信</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body"><img src="./assets/Wechat.jpg" width="100%" /></div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="./sponsors"><span class="navbar-text">赞助商</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_me"><span class="navbar-text">联系我们</span></a></li>
-          <li class="nav-item">
-            <!-- 新生群button入口 -->
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#groupModal"><span class="navbar-text">官方专业群</span></a>
-            <!-- Modal -->
-            <div class="modal fade" id="groupModal" tabindex="-1" aria-labelledby="groupModalLabel" aria-hidden="true">
-              <div class="modal-dialog" style="margin-top: 90px;">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="groupModalLabel">专业群验证</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="alert" style="display: none;" role="alert" id="emailAlert"></div>
-                    <form>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="email" placeholder="请输入你的GT邮箱">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="g-recaptcha btn btn-primary" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail">提交</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <!-- <div id="changeLang" class="changeLangBtn" onclick="">ENG/中</div> -->
 
     <!--Departments  部门介绍-->
@@ -122,28 +124,28 @@
 
           <ul class="depart_list">
             <li class="depart_list_item">
-              <a href="./executive.html">主席团</a>
+              <a href="./executive">主席团</a>
             </li>
             <li class="depart_list_item">
-              <a href="./JiShuBu.html">技术部</a>
+              <a href="./JiShuBu">技术部</a>
             </li>
             <li class="depart_list_item">
-              <a href="./xuanchuanbu.html">宣传部</a>
+              <a href="./xuanchuanbu">宣传部</a>
             </li>
             <li class="depart_list_item">
-              <a href="./QiHuaBu.html">企划部</a>
+              <a href="./QiHuaBu">企划部</a>
             </li>
             <li class="depart_list_item">
-              <a href="./zhiyebu.html">职业部</a>
+              <a href="./zhiyebu">职业部</a>
             </li>
             <li class="depart_list_item">
-              <a href="./WaiLianBu.html">外联部</a>
+              <a href="./WaiLianBu">外联部</a>
             </li>
             <li class="depart_list_item">
-              <a href="./NeiLianBu.html">内联部</a>
+              <a href="./NeiLianBu">内联部</a>
             </li>
             <li class="depart_list_item">
-              <a href="./CaiWuBu.html">财务部</a>
+              <a href="./CaiWuBu">财务部</a>
             </li>
           </ul>
         </div>
