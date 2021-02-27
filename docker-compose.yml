@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cssa-web:
+    build: .
+    expose:
+      - 80
+    environment:
+      - VIRTUAL_HOST=cssa-dev.marcuszhou.com
+      - NETWORK_ACCESS=cloudflare
+      - NODE_ENV=production
+    restart: always
+networks:
+  default:
+    external:
+      name: sites_proxied

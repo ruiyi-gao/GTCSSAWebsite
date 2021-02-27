@@ -9,7 +9,8 @@
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "start": "cross-env NODE_ENV=debug CSSA_SERVER_PORT=19080 node --icu-data-dir=node_modules/full-icu dist/app.js",
-    "start:production": "cross-env NODE_ENV=production node --icu-data-dir=node_modules/full-icu dist/app.js"
+    "start:production": "cross-env NODE_ENV=production node --icu-data-dir=node_modules/full-icu dist/app.js",
+    "deploy": "yarn run build && docker-compose up --force-recreate --build -d --remove-orphans"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
