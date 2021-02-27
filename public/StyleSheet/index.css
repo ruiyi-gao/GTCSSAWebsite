@@ -21,11 +21,16 @@
 
 #carousel {
   width: 100%;
+  height: 90vh;
 }
 
 .carousel_img {
   max-width: 99%;
-  max-width: 99%;
+  max-height: 99%;
+  filter: blur(0px);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .carousel_dot {
@@ -56,6 +61,34 @@
 .carousel_container {
   display: none;
   height: 80%;
+  text-align: center;
+  position: relative;
+}
+
+.enable-blur {
+  position: absolute;
+  filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.img1 {
+  background-image: url(../assets/Carousel/home_1.jpg);
+}
+
+.img2 {
+  background-image: url(../assets/Carousel/home_2.jpg);
+}
+
+.img3 {
+  background-image: url(../assets/Carousel/home_3.jpg);
+}
+
+.img4 {
+  background-image: url(../assets/Carousel/home_4.jpg);
 }
 
 .contact {
@@ -342,3 +375,43 @@ left: 0;
 }
 /*处于hover后面元素的下划线从左侧开始显示*/
 nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
+
+/* Default: extra large devices */
+/* Large devices */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+      width: 1280px;
+  }
+
+  .fa.showCenter{
+    color:gray;
+    margin:25% 30%
+  }
+
+  .h1show{
+    color:gray;
+    text-align:center; line-height: 250%; font-size: 64px
+  }
+
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Small devices */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  #carousel {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 575.98px) {
+  #carousel {
+    width: 100%;
+    height: 40vh;
+  }
+}
