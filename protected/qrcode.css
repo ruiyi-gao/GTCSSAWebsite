@@ -1,0 +1,46 @@
+.code-text {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  color: #3C495C;
+}
+
+.code-title {
+  font-size: 32px;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+
+.code-sub-title {
+  font-size: 28px;
+  margin-left: 15%;
+}
+
+.code-sub-sub-title {
+  font-size: 22px;
+  margin-left: 15%;
+}
+
+.code-container {
+  width: 70%;
+  margin: 0 15%;
+}
+
+.code-card {
+  background-color: #D1D1D1;
+  border-radius: 15px;
+}
+
+.code-card-image-container {
+  background-color: white;
+  margin: 15px 15px 0px 15px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.code-card-image {
+  max-width: 100%;
+  max-height: 100%;
+}
