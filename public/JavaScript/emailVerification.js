@@ -1,11 +1,10 @@
 let sendAvailable = true;
 const emailPattern = /\S+@\S+\.\S+/;
 
-async function sendEmail(){
+async function sendEmail(recaptchaChallengeResponse){
     const input = document.getElementById("email");
     const button = document.getElementById("emailCountDown");
     const alert = document.getElementById("emailAlert");
-    const recaptchaChallengeResponse = "ummmmm-wut-is-this"; // Get reCaptcha response and put it here.
 
     const showError = (msg) => {
         alert.innerText = msg;

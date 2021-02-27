@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="./StyleSheet/department-executive.css">
   <link rel="stylesheet" href="./StyleSheet/sponsors.css">
   <script rel="text/javascript" src="JavaScript/responsive.js"></script>
+  <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
   <title>GTCSSA</title>
 </head>
 <body onload="responsive_layout(true)" onresize="responsive_layout(false)">
+  <!-- Navbar 导航栏 -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="./index">
       <img src="assets/logo.png" width="50" height="50" alt="" loading="lazy">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,8 +28,8 @@
             <span class="navbar-text">关于CSSA</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="about">
-            <a class="dropdown-item" href="./department_intro.html"><span class="navbar-sub-text">部门介绍</span></a>
-            <a class="dropdown-item" href="./members.html"><span class="navbar-sub-text">成员介绍</span></a>
+            <a class="dropdown-item" href="./department_intro"><span class="navbar-sub-text">部门介绍</span></a>
+            <a class="dropdown-item" href="./members"><span class="navbar-sub-text">成员介绍</span></a>
             <div class="dropdown-divider"></div>
             <span class="dropdown-item" data-toggle="modal" data-target="#instagramModal">
               <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram
@@ -63,8 +65,8 @@
             </div>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./sponsors.html"><span class="navbar-text">赞助商</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact_me.html"><span class="navbar-text">联系我们</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="./sponsors"><span class="navbar-text">赞助商</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact_me"><span class="navbar-text">联系我们</span></a></li>
         <li class="nav-item">
           <!-- 新生群button入口 -->
           <a class="nav-link" href="#" data-toggle="modal" data-target="#groupModal"><span class="navbar-text">官方专业群</span></a>
@@ -84,18 +86,10 @@
                     <div class="form-group">
                       <input type="text" class="form-control" id="email" placeholder="请输入你的GT邮箱">
                     </div>
-                    <div class="form-group form-inline">
-                      <input type="text" class="form-control mr-2" id="verification" placeholder="请输入验证码">
-                      <button
-                        type="button"
-                        id="emailCountDown"
-                        class="btn btn-outline-secondary"
-                      >获取验证码</button>
-                    </div>
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" onclick="sendEmail()">提交</button>
+                  <button class="g-recaptcha btn btn-primary" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail">提交</button>
                 </div>
               </div>
             </div>
@@ -121,8 +115,8 @@
   </div> -->
 <div class="image-container">
   <div class="text-container">
-    <div class="sponsor-title">Our Supporters</div>
-    <div class="sponsor-subtitle">SPONSORS & PARTNERS</div>
+    <div class="sponsor-title">2020-2021年度赞助商</div>
+    <div class="sponsor-subtitle">我们的金主爸爸们</div>
   </div>
 </div>
   <div class="sponsor-container">

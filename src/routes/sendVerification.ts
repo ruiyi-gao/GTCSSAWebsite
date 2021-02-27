@@ -63,13 +63,13 @@ export const sendVerification: RequestHandler = ((req, res) => {
         .then(() => {
             logger.debug(`Verification email sent to user ${userRemoteIp}`);
             res.json({
-                linkExpiration, email, userRemoteIp, message: "A verification link has been sent to your GeorgiaTech mailbox."
+                linkExpiration, email, userRemoteIp, message: "请查看你的GT邮箱。如果5分钟内没有收到邮件请重试。"
             });
         }, error => {
             logger.error(`Unable to send verification link to user ${userRemoteIp} because of error: ${error.response.body}`);
             res.json({
                 error: "internal-error",
-                message: "There was an internal error that prevented us from sending the verification link."
+                message: "系统故障，无法发送邮件。请联系CSSA技术部。"
             });
         });
 });

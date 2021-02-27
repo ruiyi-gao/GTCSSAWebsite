@@ -9,29 +9,28 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="./StyleSheet/index.css">
   <link rel="stylesheet" href="./StyleSheet/members.css">
+  <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
   <title>GTCSSA部门介绍</title>
 </head>
 
 <body style="">
   <!-- Navbar 导航栏 -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="./index">
       <img src="assets/logo.png" width="50" height="50" alt="" loading="lazy">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navBarContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="navbar-text">关于CSSA</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="about">
-            <a class="dropdown-item" href="#departments"><span class="navbar-sub-text">部门介绍</span></a>
-            <a class="dropdown-item" href="#clubs"><span class="navbar-sub-text">成员介绍</span></a>
+            <a class="dropdown-item" href="./department_intro"><span class="navbar-sub-text">部门介绍</span></a>
+            <a class="dropdown-item" href="./members"><span class="navbar-sub-text">成员介绍</span></a>
             <div class="dropdown-divider"></div>
             <span class="dropdown-item" data-toggle="modal" data-target="#instagramModal">
               <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram
@@ -40,8 +39,7 @@
               <i class="fa fa-weixin" aria-hidden="true"></i>&nbsp;&nbsp;微信
             </span>
           </div>
-          <div class="modal fade" id="instagramModal" tabindex="-1" aria-labelledby="instagramModalLabel"
-            aria-hidden="true">
+          <div class="modal fade" id="instagramModal" tabindex="-1" aria-labelledby="instagramModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="margin-top: 90px;">
               <div class="modal-content">
                 <div class="modal-header">
@@ -68,13 +66,11 @@
             </div>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#"><span class="navbar-text">新生</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/events"><span class="navbar-text">赞助商</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/sponsors"><span class="navbar-text">联系我们</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="./sponsors"><span class="navbar-text">赞助商</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact_me"><span class="navbar-text">联系我们</span></a></li>
         <li class="nav-item">
           <!-- 新生群button入口 -->
-          <a class="nav-link" href="#" data-toggle="modal" data-target="#groupModal"><span
-              class="navbar-text">官方专业群</span></a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#groupModal"><span class="navbar-text">官方专业群</span></a>
           <!-- Modal -->
           <div class="modal fade" id="groupModal" tabindex="-1" aria-labelledby="groupModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="margin-top: 90px;">
@@ -91,15 +87,10 @@
                     <div class="form-group">
                       <input type="text" class="form-control" id="email" placeholder="请输入你的GT邮箱">
                     </div>
-                    <div class="form-group form-inline">
-                      <input type="text" class="form-control mr-2" id="verification" placeholder="请输入验证码">
-                      <button type="button" id="emailCountDown" class="btn btn-outline-secondary"
-                        onclick="sendEmail()">获取验证码</button>
-                    </div>
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">提交</button>
+                  <button class="g-recaptcha btn btn-primary" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail">提交</button>
                 </div>
               </div>
             </div>
