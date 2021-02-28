@@ -30,9 +30,13 @@ img.logo {
 div.info_container {
     float: left;
     margin-top: 36px;
-    margin-left: 7%;
+    margin-left: 22%;
     font: Archivo
     
+}
+
+p.words{
+    font-size: 24px;
 }
 
 div.notification {
@@ -50,4 +54,68 @@ div.contact_upper_page {
     flex-direction: row;
     padding-bottom: 35px;
     
+}
+
+div.photo_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 5%;
+}
+
+div.photo_links{
+    display: flex;
+    flex-direction: row;
+}
+
+p.notation{
+    text-align: center;
+}
+@media only screen and (max-width:800px){
+
+    div.info_container {
+            float: right;
+            margin-top: 36px;
+            margin-left: 0%;
+            font: Archivo    
+            
+    }
+
+    div.photo_wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            margin-left: 5%;
+    }
+    
+    div.photo_links{
+            display: flexbox;
+            flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:420px){
+    div.info_container {
+        float: left;
+        margin-top: 36px;
+        margin-left: 2%;
+        font: Archivo    
+        
+    }
+
+    p.words{
+        font-size:14px
+    }
+
+    div.photo_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    div.photo_links{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
