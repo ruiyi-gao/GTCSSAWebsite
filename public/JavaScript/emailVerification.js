@@ -1,4 +1,5 @@
 let sendAvailable = true;
+console.log("hi");
 const emailPattern = /\S+@\S+\.\S+/;
 
 async function sendEmail(recaptchaChallengeResponse){
