@@ -263,13 +263,19 @@ div.contact_icon_container{
 	background-color:gray;
 }
 
+.real_depart_container {
+  margin: 5% 18%;
+}
+
 .depBox {
   width: 100%;
   ;/* padding百分比相对父元素宽度计算 */
   height:100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .col-lg-2{
   padding-left: 0 !important;padding-right: 0 !important;
@@ -283,7 +289,7 @@ div.contact_icon_container{
   padding-left: 4% !important; 
   padding-right: 4% !important;
   text-align: center;
-  font-size:24px
+  font-size:24px;
 }
 .center-vertical{
   position: relative;
@@ -302,8 +308,6 @@ div.contact_icon_container{
 }
 .fa.showCenter{
   color:gray;
-  margin: 36% 0;
-  line-height:100%
 }
 
 .h1show{
@@ -385,7 +389,6 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
 
   .fa.showCenter{
     color:gray;
-    margin:25% 30%
   }
 
   .h1show{
@@ -393,15 +396,42 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
     text-align:center; line-height: 250%; font-size: 64px
   }
 
+  .depBox2 {
+    font-size: 20px;
+  }
+
+  .depart_title_landing {
+    font-size: 36px;
+  }
 }
 
 /* Medium devices */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-
+  .depBox2 {
+    font-size: 18px;
+  }
+  .real_depart_container {
+    margin: 5% 10%;
+  }
+  .depart_title_landing {
+    font-size: 32px;
+  }
 }
 
 /* Small devices */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .depBox2 {
+    font-size: 14px;
+  }
+  .real_depart_container {
+    margin: 5% 8%;
+  }
+  .h1show {
+    font-size: 36px;
+  }
+  .depart_title_landing {
+    font-size: 26px;
+  }
   #carousel {
     width: 100%;
     height: 50vh;
@@ -410,6 +440,18 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
 
 /* Extra small devices */
 @media only screen and (max-width: 575.98px) {
+  .depBox2 {
+    font-size: 14px;
+  }
+  .real_depart_container {
+    margin: 5% 8%;
+  }
+  .h1show {
+    font-size: 36px;
+  }
+  .depart_title_landing {
+    font-size: 26px;
+  }
   #carousel {
     width: 100%;
     height: 40vh;

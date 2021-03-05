@@ -1,5 +1,5 @@
 let sendAvailable = true;
-console.log("hi");
+
 const emailPattern = /\S+@\S+\.\S+/;
 
 const showError = (msg) => {
