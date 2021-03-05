@@ -84,11 +84,12 @@
                   <form>
                     <div class="form-group">
                       <input type="text" class="form-control" id="email" placeholder="请输入你的GT邮箱">
+                      <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail" data-size="invisible"></div>
                     </div>
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button class="g-recaptcha btn btn-primary" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail">提交</button>
+                  <button id="emailValidate" class="btn btn-primary" onclick="validateEmail()">提交</button>
                 </div>
               </div>
             </div>
@@ -107,7 +108,7 @@
   <div id="carousel">
     <div class="carousel_container fade-in" style="display: block;">
       <div class="enable-blur img1"></div>
-      <img class="carousel_img" src="assets/Carousel/home_1.jpg" alt="">
+      <img class="carousel_img" src="assets/Carousel/home_1.png" alt="">
     </div>
     <div class="carousel_container fade-in">
       <div class="enable-blur img2"></div>

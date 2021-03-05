@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./StyleSheet/department-executive.css">
   <link rel="stylesheet" href="./StyleSheet/sponsors.css">
   <script rel="text/javascript" src="JavaScript/responsive.js"></script>
+  <script type="text/javascript" src="./JavaScript/emailVerification.js"></script>
   <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
   <title>GTCSSA</title>
 </head>
@@ -85,11 +86,12 @@
                   <form>
                     <div class="form-group">
                       <input type="text" class="form-control" id="email" placeholder="请输入你的GT邮箱">
+                      <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail" data-size="invisible"></div>
                     </div>
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button class="g-recaptcha btn btn-primary" data-sitekey="6LfBN2MaAAAAAMrqcZ6BkV0DmvXwgOFOXWeRS0_B" data-callback="sendEmail">提交</button>
+                  <button id="emailValidate" class="btn btn-primary" onclick="validateEmail()">提交</button>
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@ import type { RequestHandler } from "express";
 import { decodeAndUseLink } from "../auth/protectedLinks";
 import { getRequestFullUrl } from "../utils/requestTools";
 
-const redirectionResourcePath = "/protected/placeholder.json"
+const redirectionResourcePath = "/protected/qrcode.html"
 const validationFailResourcePath = "/"
 
 export const verifyEmail: RequestHandler = ((req, res) => {
