@@ -91,6 +91,10 @@
   background-image: url(../assets/Carousel/home_4.jpg);
 }
 
+.organization-intro {
+  font-size: 24px;
+}
+
 .contact {
   margin-top: 100px;
   height: 170px;
@@ -396,7 +400,7 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
     text-align:center; line-height: 250%; font-size: 64px
   }
 
-  .depBox2 {
+  .depBox2, .organization-intro {
     font-size: 20px;
   }
 
@@ -407,7 +411,7 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
 
 /* Medium devices */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .depBox2 {
+  .depBox2, .organization-intro {
     font-size: 18px;
   }
   .real_depart_container {
@@ -420,7 +424,7 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
 
 /* Small devices */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .depBox2 {
+  .depBox2, .organization-intro {
     font-size: 14px;
   }
   .real_depart_container {
@@ -440,7 +444,7 @@ nav li:hover .dropdown-menu {display: block;} /*navbar鼠标悬停自动弹出
 
 /* Extra small devices */
 @media only screen and (max-width: 575.98px) {
-  .depBox2 {
+  .depBox2, .organization-intro {
     font-size: 14px;
   }
   .real_depart_container {
