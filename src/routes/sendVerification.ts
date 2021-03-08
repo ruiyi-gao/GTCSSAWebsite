@@ -55,7 +55,7 @@ export const sendVerification: RequestHandler = (async (req, res) => {
         let linkExpiration = new Date(Date.now() + 1.8e+6); // 30 minutes expiration
 
         let signedVerificationLink = signLink(redirectionUrl, {
-            type: "one-off",
+            type: "permanent",
             resource: "email-protected-resources",
             expiration: linkExpiration
         });
