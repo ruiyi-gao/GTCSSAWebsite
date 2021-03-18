@@ -5,7 +5,7 @@ services:
     expose:
       - 80
     environment:
-      - VIRTUAL_HOST=cssa-dev.marcuszhou.com
+      - VIRTUAL_HOST=gtcssa.org
       - NETWORK_ACCESS=cloudflare
       - NODE_ENV=production
     restart: always
