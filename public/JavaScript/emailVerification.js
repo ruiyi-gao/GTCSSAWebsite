@@ -1,5 +1,14 @@
 let sendAvailable = true;
 
+window.onload = () => {
+    document.getElementById("groupModal").addEventListener("keydown", e => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            validateEmail();
+        }
+    });
+};
+
 const emailPattern = /\S+@\S+\.\S+/;
 
 const showError = (msg) => {
@@ -23,7 +32,6 @@ const showInfo = (msg) => {
 }
 
 async function sendEmail(recaptchaChallengeResponse){
-    console.log("yes", recaptchaChallengeResponse);
     const button = document.getElementById("emailValidate");
     const input = document.getElementById("email");
     try {
@@ -54,16 +62,12 @@ async function sendEmail(recaptchaChallengeResponse){
 }
 
 function validateEmail(){
-    console.log("a");
     const input = document.getElementById("email");
-
     if (sendAvailable){
         // Test whether the email address is valid
         if (emailPattern.test(input.value) && input.value.endsWith("@gatech.edu")){
-            console.log("true");
             grecaptcha.execute();
         } else {
-            console.log("false");
             showError("请输入正确的GT邮箱");
         }
     }
