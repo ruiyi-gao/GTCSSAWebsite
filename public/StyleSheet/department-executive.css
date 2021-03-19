@@ -1,3 +1,7 @@
+div.depart_margin {
+  margin: 5% 0;
+}
+
 div.depart_container {
   overflow: hidden;
   margin: 60px 7.5% 24px 7.5%;
@@ -109,6 +113,9 @@ a:active {
 }
 
 @media only screen and (max-width: 500px) {
+  div.depart_margin {
+    margin: 15% 0;
+  }
   div.depart_intro_container {
     width: 100%;
   }
