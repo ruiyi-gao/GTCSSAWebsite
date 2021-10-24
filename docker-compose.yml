@@ -12,4 +12,4 @@ services:
 networks:
   default:
     external:
-      name: sites_proxied
+      name: cssa-host-services_proxied
